@@ -17,9 +17,7 @@ class FormulaException extends Exception{
 class Formula {
     public static double solveTheFormula(double x, double y) throws FormulaException{
             double z = 0;
-            if(y == -1){
-                throw new FormulaException("The divisor is 0", y);
-            }
+            if(y == -1) throw new FormulaException("The divisor is 0", y);
             z = (x + y) / (y + 1);
             return z;
     }
